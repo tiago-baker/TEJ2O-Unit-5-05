@@ -10,7 +10,6 @@ let neopixelStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
 
 // Button A Pressed 
 input.onButtonPressed(Button.A, function () {
-    
     // Turn all NeoPixels off
     neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
     neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
