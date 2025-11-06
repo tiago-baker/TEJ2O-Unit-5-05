@@ -6,7 +6,7 @@
 */
 
 // variables
-let myStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
+let myStrip = neopixel.create(DigitalPin.P0, 4, NeoPixelMode.RGB)
 
 // Turn off all NeoPixels 
 myStrip.showColor(neopixel.colors(NeoPixelColors.Black))
