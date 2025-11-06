@@ -6,38 +6,45 @@
 */
 
 // variables
-let neopixelStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
+let myStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
 
 // Turn off all NeoPixels 
-neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
-neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
-neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
-neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-neopixelStrip.show()
+myStrip.showColor(neopixel.colors(NeoPixelColors.Black))
+myStrip.showColor(neopixel.colors(NeoPixelColors.Black))
+myStrip.showColor(neopixel.colors(NeoPixelColors.Black))
+myStrip.showColor(neopixel.colors(NeoPixelColors.Black))
+myStrip.show()
 
 // Button A Pressed 
 input.onButtonPressed(Button.A, function () {
     // Green light
-    neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Green))
-    neopixelStrip.show()
+    myStrip.showColor(neopixel.colors(NeoPixelColors.Black))
+    myStrip.showColor(neopixel.colors(NeoPixelColors.Black))
+    myStrip.showColor(neopixel.colors(NeoPixelColors.Green))
+    myStrip.showColor(neopixel.colors(NeoPixelColors.Black))
+    myStrip.show()
     basic.pause(2000)
 
     // yellow light
-    neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
-    neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Yellow))
-    neopixelStrip.show()
+    myStrip.showColor(neopixel.colors(NeoPixelColors.Black))
+    myStrip.showColor(neopixel.colors(NeoPixelColors.Yellow))
+    myStrip.showColor(neopixel.colors(NeoPixelColors.Black))
+    myStrip.showColor(neopixel.colors(NeoPixelColors.Black))
+    myStrip.show()
     basic.pause(2000)
 
     // red light
-    neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
-    neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Red))
-    neopixelStrip.show()
+    myStrip.showColor(neopixel.colors(NeoPixelColors.Red))
+    myStrip.showColor(neopixel.colors(NeoPixelColors.Black))
+    myStrip.showColor(neopixel.colors(NeoPixelColors.Black))
+    myStrip.showColor(neopixel.colors(NeoPixelColors.Black))
+    myStrip.show()
     basic.pause(2000)
 
     // Turn off all NeoPixels 
-    neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
-    neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
-    neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
-    neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
-    neopixelStrip.show()
+    myStrip.showColor(neopixel.colors(NeoPixelColors.Black))
+    myStrip.showColor(neopixel.colors(NeoPixelColors.Black))
+    myStrip.showColor(neopixel.colors(NeoPixelColors.Black))
+    myStrip.showColor(neopixel.colors(NeoPixelColors.Black))
+    myStrip.show()
 })
