@@ -17,6 +17,7 @@ myStrip.show()
 
 // Button A Pressed 
 input.onButtonPressed(Button.A, function () {
+    
     // Green light
     myStrip.showColor(neopixel.colors(NeoPixelColors.Black))
     myStrip.showColor(neopixel.colors(NeoPixelColors.Black))
