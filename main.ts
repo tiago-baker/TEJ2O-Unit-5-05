@@ -6,11 +6,20 @@
 */
 
 // variables
-let neopixelStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
+let neopixelStrip: neopixel.Strip = null
+
+// setup
+basic.clearScreen()
+neopixelStrip = neopixel.create(DigitalPin.P16, 4, NeoPixelMode.RGB)
+neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
+neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
+neopixelStrip.setPixelColor(2, neopixel.colors(NeoPixelColors.Black))
+neopixelStrip.setPixelColor(3, neopixel.colors(NeoPixelColors.Black))
+neopixelStrip.show()
+basic.showIcon(IconNames.Happy)
 
 // Button A Pressed 
 input.onButtonPressed(Button.A, function () {
-    
     // Turn all NeoPixels off
     neopixelStrip.setPixelColor(0, neopixel.colors(NeoPixelColors.Black))
     neopixelStrip.setPixelColor(1, neopixel.colors(NeoPixelColors.Black))
